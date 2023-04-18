@@ -1,0 +1,26 @@
+-- ftd.type desktop-type:
+size.px: 50
+weight: 800
+font-family: Inter
+line-height.px: 70
+letter-spacing.px: 5
+
+-- ftd.type mobile-type:
+size.px: 20
+weight: 100
+font-family: Inter
+line-height.px: 35
+letter-spacing.px: 3
+
+-- ftd.responsive-type responsive-typography:
+desktop: $desktop-type
+mobile: $mobile-type
+
+-- component base-text-wrapper:
+caption title:
+
+-- ftd.text: $base-text-wrapper.title
+role: $responsive-typography
+align-self: left
+
+-- end: base-text-wrapper

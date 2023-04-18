@@ -6,10 +6,6 @@
 <title></title>
 <script type="ftd" id="ftd-data">
 {
-"ayushsoni1010.github.io/portfolio-website-fastn/assets#files.images.profile-pic.jpg": {
-"dark": "-/ayushsoni1010.github.io/portfolio-website-fastn/images/profile-pic.jpg",
-"light": "-/ayushsoni1010.github.io/portfolio-website-fastn/images/profile-pic.jpg"
-},
 "ftd#breakpoint-width": {
 "mobile": 768
 },
@@ -738,7 +734,7 @@ margin-block-end: 1em;
 </head>
 <body style="height: 100%; margin: 0;">
 
-<div data-id="main" style="height: 100%; width: 100%" class="ft_common ft_column"><div data-id="0:main" style="gap: 100px; justify-content: start; margin: 8%" class="ft_common ft_row"><img data-id="0,0:main" src="-/ayushsoni1010.github.io/portfolio-website-fastn/images/profile-pic.jpg" style="border-radius: 10px; margin-bottom: 80px; width: 300px" class="ft_common"></img><div data-id="0,1:main" style="gap: 20px; justify-content: start" class="ft_common ft_column"><div data-id="0,1,0:main" style="" class="ft_common ft_md">👨‍🎓This is Ayush Soni , a junior-year computer science undergraduate, pursuing B.Tech from Medi-Caps University, Indore. I am always fascinated by programming and passionate about exploring the latest technology and developing new cool and innovative products. I am an enthusiastic and curious individual who works hard and is highly ambitious in improving my knowledge of real-world applications.</div><div data-id="0,1,1:main" style="" class="ft_common ft_md">⚡I am a Full Stack Developer, an avid Open-Source Enthusiast, and UX/UI Designer, I enjoy building SaaS products and microservices applications while also creating feasible design systems. My deep understanding of frontend and backend application structure and architecture allows me to build robust and scalable products using core principles. By leveraging design principles, I can deliver engaging and intuitive designs that provide seamless user experiences.</div><div data-id="0,1,2:main" style="" class="ft_common ft_md">🎯In terms of technical skills, I work with Javascript and Typescript on a daily basis, both professionally and on personal projects. I have actively participated in various hackathons and open-source contribution programs as both a participant and mentor, and I have taken sessions in the community to help with community building, team leadership, and different methodologies in developing software.</div></div></div></div>
+<div data-id="main" style="height: 100%; width: 100%" class="ft_common ft_column"></div>
 
 
 <script>
@@ -1851,44 +1847,7 @@ return (ftd.toggle_rive_boolean(rive,input,args,data,id));
 }
 
 
-window.node_change_main = {};
-window.node_change_main["0,0:main__src"] = function(data) {
-if(!data["ftd#dark-mode"]){
-document.querySelector(`[data-id="0,0:main"]`).setAttribute("src", resolve_reference("ayushsoni1010.github.io/portfolio-website-fastn/assets#files.images.profile-pic.jpg", data).light);
-}
-else {document.querySelector(`[data-id="0,0:main"]`).setAttribute("src", resolve_reference("ayushsoni1010.github.io/portfolio-website-fastn/assets#files.images.profile-pic.jpg", data).dark);}
 
-
-if (document.querySelector(`[data-id="0,0:main"]`).getAttribute("src") == "REMOVE-KEY"){
-document.querySelector(`[data-id="0,0:main"]`).removeAttribute("src");
-}
-}
-window.set_value_main = {};
-window.set_value_main["ayushsoni1010.github.io/portfolio-website-fastn/assets#files.images.profile-pic.jpg"] = function (data, new_value, remaining) {
-if (!!remaining) {
-set_data_value(data, "ayushsoni1010.github.io/portfolio-website-fastn/assets#files.images.profile-pic.jpg" + "." + remaining, new_value);
-} else {
-set_data_value(data, "ayushsoni1010.github.io/portfolio-website-fastn/assets#files.images.profile-pic.jpg", new_value);
-}
-
-window.ftd.call_mutable_value_changes("ayushsoni1010.github.io/portfolio-website-fastn/assets#files.images.profile-pic.jpg", "main");
-window.ftd.call_immutable_value_changes("ayushsoni1010.github.io/portfolio-website-fastn/assets#files.images.profile-pic.jpg", "main");
-if(!!window["node_change_main"] && !!window.node_change_main["0,0:main__src"]){window.node_change_main["0,0:main__src"](data);
-}
-};
-
-window.set_value_main["ftd#dark-mode"] = function (data, new_value, remaining) {
-if (!!remaining) {
-set_data_value(data, "ftd#dark-mode" + "." + remaining, new_value);
-} else {
-set_data_value(data, "ftd#dark-mode", new_value);
-}
-
-window.ftd.call_mutable_value_changes("ftd#dark-mode", "main");
-window.ftd.call_immutable_value_changes("ftd#dark-mode", "main");
-if(!!window["node_change_main"] && !!window.node_change_main["0,0:main__src"]){window.node_change_main["0,0:main__src"](data);
-}
-};
 
 
 
