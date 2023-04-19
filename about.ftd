@@ -28,7 +28,7 @@ mobile: $text-wrapper-mobile-type
 size.px: 16
 font-family: Inter
 color: #1a202c
-line-height.px: 22
+line-height.px: 25
 ;;letter-spacing.px: 0
 style: regular
 
@@ -67,6 +67,36 @@ z-index: -1
 -- end: ftd.column
 
 -- end: base-text-wrapper
+
+;; --------------------------------------------------------------------------------------------
+
+
+;; ********** component for base-text wrapper **********
+-- component social-button-wrapper:
+optional string link:
+optional string image:
+children ui-button:
+
+-- ftd.container:
+children: $social-button-wrapper.ui-button
+padding-top.px: 8
+padding-bottom.px: 8
+padding-left.px: 12
+padding-right.px: 12
+border-radius.px: 6
+background.solid: #e2e8f0
+
+
+
+;;-- ftd.image:
+;;link: $social-button-wrapper.link
+;;src: $social-button-wrapper.image
+;;width.fixed.px: 15
+;;margin-top.px: 3
+
+-- end: ftd.container
+
+-- end: social-button-wrapper
 
 ;; --------------------------------------------------------------------------------------------
 
@@ -113,8 +143,82 @@ role: $about-description-responsive-typography
 
 🎯In terms of technical skills, I work with Javascript and Typescript on a daily basis, both professionally and on personal projects. I have actively participated in various hackathons and open-source contribution programs as both a participant and mentor, and I have taken sessions in the community to help with community building, team leadership, and different methodologies in developing software.
 
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- social-button-wrapper:
+
+-- ftd.image:
+link: https://linkedin.com/in/ayushsoni1010
+src: $assets.files.images.linkedin.png
+width.fixed.px: 18
+height.fixed.px: 18
+margin-top.px: 3
+
+-- end: social-button-wrapper
+  
+-- social-button-wrapper:
+
+-- ftd.image:
+link: https://twitter.com/ayushsoni1010
+src: $assets.files.images.twitter.png
+width.fixed.px: 18
+height.fixed.px: 18
+margin-top.px: 3
+
+-- end: social-button-wrapper
+  
+-- social-button-wrapper:
+
+-- ftd.image:
+link: https://github.com/ayushsoni1010
+src: $assets.files.images.github.png
+width.fixed.px: 18
+height.fixed.px: 18
+margin-top.px: 3
+
+-- end: social-button-wrapper
+  
+-- social-button-wrapper:
+
+-- ftd.image:
+link: https://instragram.com/ayushsoni1010
+src: $assets.files.images.instagram.png
+width.fixed.px: 18
+height.fixed.px: 18
+margin-top.px: 3
+
+-- end: social-button-wrapper
+
+-- social-button-wrapper:
+
+-- ftd.image:
+link: https://youtube.com/@ayushsoni1010
+src: $assets.files.images.youtube.png
+width.fixed.px: 18
+height.fixed.px: 18
+margin-top.px: 3
+
+-- end: social-button-wrapper
+  
+-- social-button-wrapper:
+
+-- ftd.image:
+link: mailto:ayushsoni1010.work@gmail.com
+src: $assets.files.images.mail.png
+width.fixed.px: 18
+height.fixed.px: 18
+margin-top.px: 3
+
+-- end: social-button-wrapper
+  
+-- end: ftd.row
+
 -- end: ftd.column
 
 -- end: ftd.row
+
+
 
 -- end: ftd.column
