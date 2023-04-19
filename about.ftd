@@ -1,15 +1,96 @@
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/assets
 
-;;creating the header component
+
+;; --------------------------------------------------------------------------------------------
 
 
+;; ********** responsive styles for base-text wrapper **********
+-- ftd.type text-wrapper-desktop-type:
+size.px: 60
+font-family: Inter
+line-height.px: 30
+
+-- ftd.type text-wrapper-mobile-type:
+size.px: 30
+font-family: Inter
+line-height.px: 15
+letter-spacing.px: 0
+
+-- ftd.responsive-type base-text-responsive-typography:
+desktop: $text-wrapper-desktop-type
+mobile: $text-wrapper-mobile-type
+
+;; --------------------------------------------------------------------------------------------
+
+
+;; ********** responsive styles for about description **********
+-- ftd.type about-description-desktop-type:
+size.px: 16
+font-family: Inter
+color: #1a202c
+line-height.px: 22
+;;letter-spacing.px: 0
+style: regular
+
+-- ftd.type about-description-mobile-type:
+size.px: 14
+font-family: Inter
+color: #1a202c
+line-height.px: 30
+;;letter-spacing.px: 0
+style: regular
+
+-- ftd.responsive-type about-description-responsive-typography:
+desktop: $about-description-desktop-type
+mobile: $about-description-mobile-type
+
+;; --------------------------------------------------------------------------------------------
+
+
+;; ********** component for base-text wrapper **********
+-- component base-text-wrapper:
+caption heading: 
+
+-- ftd.column:
+
+-- ftd.text: $base-text-wrapper.heading
+role: $base-text-responsive-typography
+color: black
+style: heavy
+
+-- ftd.text: Developer
+role: $base-text-responsive-typography
+color: teal
+style: heavy
+z-index: -1
+
+-- end: ftd.column
+
+-- end: base-text-wrapper
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.column:
+margin.percent: 7.4
+spacing.fixed.px: 7
 
 -- ftd.row:
-margin.percent: 8
-spacing.fixed.px: 100
+
+-- base-text-wrapper: About
 
 -- ftd.image:
-width.fixed.px: 300
+src: https://ik.imagekit.io/ayushsoni1010/Website/about?updatedAt=1669666323627
+width.fixed.percent: 12
+margin-top.px: -15
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 170
+
+-- ftd.image:
+width.fixed.px: 320
 src: $assets.files.images.profile-pic.jpg
 margin-bottom.px: 80
 border-radius.px: 10
@@ -18,14 +99,17 @@ border-radius.px: 10
 spacing.fixed.px: 20
 
 -- ftd.text: 
+role: $about-description-responsive-typography
 
 👨‍🎓This is Ayush Soni , a junior-year computer science undergraduate, pursuing B.Tech from Medi-Caps University, Indore. I am always fascinated by programming and passionate about exploring the latest technology and developing new cool and innovative products. I am an enthusiastic and curious individual who works hard and is highly ambitious in improving my knowledge of real-world applications.
 
 -- ftd.text: 
+role: $about-description-responsive-typography
 
 ⚡I am a Full Stack Developer, an avid Open-Source Enthusiast, and UX/UI Designer, I enjoy building SaaS products and microservices applications while also creating feasible design systems. My deep understanding of frontend and backend application structure and architecture allows me to build robust and scalable products using core principles. By leveraging design principles, I can deliver engaging and intuitive designs that provide seamless user experiences.
 
 -- ftd.text: 
+role: $about-description-responsive-typography
 
 🎯In terms of technical skills, I work with Javascript and Typescript on a daily basis, both professionally and on personal projects. I have actively participated in various hackathons and open-source contribution programs as both a participant and mentor, and I have taken sessions in the community to help with community building, team leadership, and different methodologies in developing software.
 
@@ -33,4 +117,4 @@ spacing.fixed.px: 20
 
 -- end: ftd.row
 
-
+-- end: ftd.column
