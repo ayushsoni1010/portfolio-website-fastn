@@ -49,20 +49,16 @@ mobile: $about-description-mobile-type
 
 ;; ********** responsive styles for open roles cta **********
 -- ftd.type open-roles-cta-desktop-type:
-size.px: 28
+size.px: 34
+weight: 800
 font-family: Inter
-color: #1a202c
-line-height.px: 25
-;;letter-spacing.px: 0
-style: regular
+color: black
 
 -- ftd.type open-roles-cta-mobile-type:
-size.px: 14
+size.px: 28
+weight: 700
 font-family: Inter
-color: #1a202c
-line-height.px: 30
-;;letter-spacing.px: 0
-style: regular
+color: black
 
 -- ftd.responsive-type open-roles-cta-responsive-typography:
 desktop: $open-roles-cta-desktop-type
@@ -103,6 +99,7 @@ ftd.image-src image:
 
 -- ftd.container:
 link: $social-button-wrapper.link
+open-in-new-tab: true
 ;;children: $social-button-wrapper.ui-button
 padding-top.px: 8
 padding-bottom.px: 8
@@ -189,7 +186,7 @@ image: $assets.files.images.github.png
 -- end: social-button-wrapper
   
 -- social-button-wrapper:
-link: https://instragram.com/ayushsoni1010
+link: https://instragram.com/aayushsoni1010
 image: $assets.files.images.instagram.png
 
 -- end: social-button-wrapper
@@ -212,6 +209,35 @@ image: $assets.files.images.mail.png
 
 -- end: ftd.row
 
+-- ftd.container:
+border-radius.px: 10
+background.solid: #cbd5e0
+padding.px: 40
+margin-top.px: 20
+margin-bottom.px: 50
+;;background.image: linear-gradient(to right, #cbd5e0, #ecc94b, #fbb6ce)
 
+-- ftd.row: 
+spacing.fixed.px: 15
+
+-- social-button-wrapper:
+link: https://ayushsoni1010.com/resume
+image: $assets.files.images.announce.png
+
+-- end: social-button-wrapper
+
+-- ftd.text: Open for roles
+align-self: center
+role: $open-roles-cta-responsive-typography
+
+-- end: ftd.row
+
+-- ftd.text: 
+role: $about-description-responsive-typography
+margin-top.px: 10
+
+As a versatile developer, I am excited about the prospect of taking on diverse roles and responsibilities in both frontend and backend development, and I am open to exploring opportunities in various work arrangements, including full-time, part-time, or contract positions.
+
+-- end: ftd.container
 
 -- end: ftd.column
