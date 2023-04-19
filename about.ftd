@@ -163,6 +163,10 @@ role: $about-description-responsive-typography
 
 🎯In terms of technical skills, I work with Javascript and Typescript on a daily basis, both professionally and on personal projects. I have actively participated in various hackathons and open-source contribution programs as both a participant and mentor, and I have taken sessions in the community to help with community building, team leadership, and different methodologies in developing software.
 
+;; --------------------------------------------------------------------------------------------
+
+
+;; ********** Social buttons wrapper **********
 
 -- ftd.row:
 spacing.fixed.px: 10
@@ -209,6 +213,11 @@ image: $assets.files.images.mail.png
 
 -- end: ftd.row
 
+;; --------------------------------------------------------------------------------------------
+
+
+;; ********** Open for roles CTA **********
+
 -- ftd.container:
 border-radius.px: 10
 background.solid: #cbd5e0
@@ -239,5 +248,65 @@ margin-top.px: 10
 As a versatile developer, I am excited about the prospect of taking on diverse roles and responsibilities in both frontend and backend development, and I am open to exploring opportunities in various work arrangements, including full-time, part-time, or contract positions.
 
 -- end: ftd.container
+
+;; --------------------------------------------------------------------------------------------
+
+
+;; ********** Footer **********
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-self: center
+margin-top.px: 70
+margin-bottom.px: 20
+
+-- ftd.text: Ayush Soni | ©2023
+color: black
+link: https://ayushsoni1010.me/portfolio-website-fastn
+role: $about-description-responsive-typography
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- social-button-wrapper:
+link: https://linkedin.com/in/ayushsoni1010
+image: $assets.files.images.linkedin.png
+
+-- end: social-button-wrapper
+  
+-- social-button-wrapper:
+link: https://twitter.com/ayushsoni1010
+image: $assets.files.images.twitter.png
+
+-- end: social-button-wrapper
+  
+-- social-button-wrapper:
+link: https://github.com/ayushsoni1010
+image: $assets.files.images.github.png
+
+-- end: social-button-wrapper
+  
+-- social-button-wrapper:
+link: https://instragram.com/aayushsoni1010
+image: $assets.files.images.instagram.png
+
+-- end: social-button-wrapper
+
+-- social-button-wrapper:
+link: https://youtube.com/@ayushsoni1010
+image: $assets.files.images.youtube.png
+
+-- end: social-button-wrapper
+  
+-- social-button-wrapper:
+link: mailto:ayushsoni1010.work@gmail.com
+image: $assets.files.images.mail.png
+
+-- end: social-button-wrapper
+  
+-- end: ftd.row
+
+-- end: ftd.row
 
 -- end: ftd.column
