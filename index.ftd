@@ -1,6 +1,28 @@
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/assets
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/header as header
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/about as social
+-- import: ayushsoni1010.github.io/portfolio-website-fastn/about as basetext
+
+;; --------------------------------------------------------------------------------------------
+
+-- ftd.shadow s:
+color: #F0F0F0
+x-offset.px: -15
+y-offset.px: 15
+blur.px: 15
+
+;; --------------------------------------------------------------------------------------------
+
+;; ********** component for skills wrapper **********
+
+-- component skills-wrapper:
+ftd.image-src imageURL: 
+
+-- ftd.image:
+src: $skills-wrapper.imageURL
+width.fixed.px: 60
+
+-- end: skills-wrapper
 
 ;; --------------------------------------------------------------------------------------------
 
@@ -351,6 +373,204 @@ bgColor: #38B2AC
 
 ;; --------------------------------------------------------------------------------------------
 
+-- ftd.column:
+margin-top.px: 120
+
+-- ftd.row:
+margin-top.px: 50
+
+-- basetext.base-text-wrapper:
+heading: Skills
+description: Programming
+
+-- ftd.image:
+src: https://ik.imagekit.io/ayushsoni1010/Website/skills?updatedAt=1669666366824
+width.fixed.percent: 12
+margin-top.px: -25
+
+-- end: ftd.row
+
+-- ftd.container:
+padding-vertical.px: 30
+padding-horizontal.px: 50
+shadow: $s
+background.solid: white
+border-radius.px: 20
+
+-- ftd.column:
+spacing.fixed.px: 50
+align-content: center
+
+-- ftd.row:
+spacing.fixed.px: 75
+
+-- skills-wrapper:
+imageURL: $assets.files.images.html-5.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.css3.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.java.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.javascript.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.typescript.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.golang.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.react.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.vue-js.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.redux.svg
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.row:
+spacing.fixed.px: 75
+
+-- skills-wrapper:
+imageURL: $assets.files.images.next-js.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.nuxt-js.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.nest-js.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.nodejs.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.express-js.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.firebase.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.sass.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.tailwind-css.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.postcss.svg
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.row:
+spacing.fixed.px: 75
+
+-- skills-wrapper:
+imageURL: $assets.files.images.mysql.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.prisma.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.mongodb.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.heroku.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.vercel.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.netlify.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.amazon-web-services.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.docker.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.google-cloud.svg
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.row:
+spacing.fixed.px: 75
+
+-- skills-wrapper:
+imageURL: $assets.files.images.chartjs.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.postman.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.strapi.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.figma.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.storybook.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.adobe-xd.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.npm.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.yarn.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.git.svg
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.row:
+spacing.fixed.px: 75
+align-content: center
+
+-- skills-wrapper:
+imageURL: $assets.files.images.chakra-ui.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.styled-components.svg
+
+-- skills-wrapper:
+imageURL: $assets.files.images.ant-design.svg
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------------------------------------
 
 
 -- end: ftd.column
+
+-- end: ftd.container
+
+-- end: ftd.column
+
+
+;; --------------------------------------------------------------------------------------------
+
+-- end: ftd.column
+
+
+
+
+
