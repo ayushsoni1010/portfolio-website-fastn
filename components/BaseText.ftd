@@ -1,26 +1,35 @@
--- ftd.type desktop-type:
-size.px: 50
-weight: 800
+-- ftd.type text-wrapper-desktop-type:
+size.px: 60
 font-family: Inter
-line-height.px: 70
-letter-spacing.px: 5
+line-height.px: 30
 
--- ftd.type mobile-type:
-size.px: 20
-weight: 100
+-- ftd.type text-wrapper-mobile-type:
+size.px: 30
 font-family: Inter
-line-height.px: 35
-letter-spacing.px: 3
+line-height.px: 15
+letter-spacing.px: 0
 
--- ftd.responsive-type responsive-typography:
-desktop: $desktop-type
-mobile: $mobile-type
+-- ftd.responsive-type base-text-responsive-typography:
+desktop: $text-wrapper-desktop-type
+mobile: $text-wrapper-mobile-type
 
 -- component base-text-wrapper:
-caption title:
+string heading:
+string description:
 
--- ftd.text: $base-text-wrapper.title
-role: $responsive-typography
-align-self: left
+-- ftd.column:
+
+-- ftd.text: $base-text-wrapper.heading
+role: $base-text-responsive-typography
+color: black
+style: heavy
+
+-- ftd.text: $base-text-wrapper.description
+role: $base-text-responsive-typography
+color: teal
+style: heavy
+z-index: -1
+
+-- end: ftd.column
 
 -- end: base-text-wrapper
