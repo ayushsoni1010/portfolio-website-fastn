@@ -68,7 +68,8 @@ mobile: $open-roles-cta-mobile-type
 
 ;; ********** component for base-text wrapper **********
 -- component base-text-wrapper:
-caption heading: 
+string heading:
+string description:
 
 -- ftd.column:
 
@@ -77,7 +78,7 @@ role: $base-text-responsive-typography
 color: black
 style: heavy
 
--- ftd.text: Developer
+-- ftd.text: $base-text-wrapper.description
 role: $base-text-responsive-typography
 color: teal
 style: heavy
@@ -227,7 +228,9 @@ imageURL: https://ik.imagekit.io/ayushsoni1010/Logo/logo_QMXL5sBnF.svg?updatedAt
 -- ftd.row:
 margin-top.px: 50
 
--- base-text-wrapper: About
+-- base-text-wrapper:
+heading: About
+description: Developer
 
 -- ftd.image:
 src: https://ik.imagekit.io/ayushsoni1010/Website/about?updatedAt=1669666323627
