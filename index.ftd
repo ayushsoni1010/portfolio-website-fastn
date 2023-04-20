@@ -1,51 +1,234 @@
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/assets
+-- import: ayushsoni1010.github.io/portfolio-website-fastn/header as header
+-- import: ayushsoni1010.github.io/portfolio-website-fastn/about as social
+
+;; --------------------------------------------------------------------------------------------
 
 
+;; ********** responsive styles for hero-ui-text wrapper **********
+-- ftd.type hero-ui-text-desktop-type:
+size.px: 60
+weight: 900
+font-family: Inter
+line-height.px: 55
 
--- ds.page: Welcome to your [FASTN site](https://fastn.io/)
+-- ftd.type hero-ui-text-mobile-type:
+size.px: 30
+weight: 800
+font-family: Inter
+line-height.px: 15
+letter-spacing.px: 0
+
+-- ftd.responsive-type hero-ui-text-responsive-typography:
+desktop: $hero-ui-text-desktop-type
+mobile: $hero-ui-text-mobile-type
+
+;; --------------------------------------------------------------------------------------------
+
+
+;; ********** responsive styles for hero-ui-text wrapper **********
+-- component hero-ui-base-text-wrapper:
+string firstTitle:
+string secondTitle:
+
+-- ftd.row: 
+spacing.fixed.px: 14
+
+-- ftd.text: $hero-ui-base-text-wrapper.firstTitle
+role: $hero-ui-text-responsive-typography
+
+
+-- ftd.text: $hero-ui-base-text-wrapper.secondTitle
+role: $hero-ui-text-responsive-typography
+color: teal
+
+-- end: ftd.row
+
+-- end: hero-ui-base-text-wrapper
+
+;; --------------------------------------------------------------------------------------------
+
+
+;; ********** responsive styles for about description **********
+-- ftd.type home-description-desktop-type:
+size.px: 16
+font-family: Inter
+color: #1a202c
+line-height.px: 25
+;;letter-spacing.px: 0
+style: regular
+
+-- ftd.type home-description-mobile-type:
+size.px: 14
+font-family: Inter
+color: #1a202c
+line-height.px: 30
+;;letter-spacing.px: 0
+style: regular
+
+-- ftd.responsive-type home-description-responsive-typography:
+desktop: $home-description-desktop-type
+mobile: $home-description-mobile-type
+
+;; --------------------------------------------------------------------------------------------
 
 -- ftd.column:
+width: fill-container
+margin-top.px: 10
+padding-bottom.percent: 7.4
+padding-left.percent: 7.4
+padding-right.percent: 7.4
+
+-- header.navbar:
+imageURL: https://ik.imagekit.io/ayushsoni1010/Logo/logo_QMXL5sBnF.svg?updatedAt=1665559064546
+
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.container:
+link: https://ayushsoni1010.com/github
+border-radius.px: 20
+border-width.px: 2
+border-color: #3182ce
+background.solid: #cbd5e0
+padding-vertical.px: 3
+padding-horizontal.px: 14
 align-self: center
+margin-top.px: 47
 
--- chat.message-left: Yo! I am Amit Upadhyay, CEO of FifthTry, welcome to the new world of FTD.
 
--- ds.markdown: 
+;; --------------------------------------------------------------------------------------------
 
-You reached the right place, and from here let me assure you, your FTD journey is going superfast. 🙂
 
--- end: chat.message-left
+-- ftd.text: Hello, I'm a Full Stack Developer based in India
+role: $inherited.types.label-large
+color: black
+text-align: center
+margin-top.px: 2
 
--- chat.message-right:  😊 Liking this chat component?
+-- end: ftd.container
 
--- ds.markdown:
+-- ftd.row: 
+margin-top.px: 60
+spacing.fixed.px: 14
 
-[Click here to learn more](https://fifthtry.github.io/bling/chat/)
-👍
+-- ftd.column:
+spacing.fixed.px: 20
 
--- end: chat.message-right
+-- hero-ui-base-text-wrapper:
+firstTitle: I'm
+secondTitle: Ayush Soni,
+
+-- hero-ui-base-text-wrapper:
+firstTitle: full stack
+secondTitle: developer
+
+-- hero-ui-base-text-wrapper:
+firstTitle: and
+secondTitle: designer.
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.text: I design and create functional and beautiful applications with passion and a focus on user experience and high quality.
+role: $home-description-responsive-typography
+margin-top.px: 10
+width.fixed.px: 700
+
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- ftd.text: Hire me
+role: $inherited.types.label-large
+link: mailto:ayushsoni1010.work@gmail.com
+color: teal
+border-color: teal
+border-width.px: 2
+background.solid: white
+border-radius.px: 6
+padding-top.px: 8
+padding-bottom.px: 8
+padding-left.px: 14
+padding-right.px: 14
+
+-- ftd.text: Schedule a Meeting
+role: $inherited.types.label-large
+open-in-new-tab: true
+link: https://calendly.com/ayushsoni1010/
+color: white
+background.solid: teal
+border-color: teal
+border-width.px: 2
+border-radius.px: 6
+padding-top.px: 8
+padding-bottom.px: 8
+padding-left.px: 14
+padding-right.px: 14
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------------------------------------
+
+;; ********** Social buttons wrapper **********
+
+-- ftd.container:
+margin-top.px: 10
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- social.social-button-wrapper:
+link: https://linkedin.com/in/ayushsoni1010
+image: $assets.files.images.linkedin.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: https://twitter.com/ayushsoni1010
+image: $assets.files.images.twitter.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: https://github.com/ayushsoni1010
+image: $assets.files.images.github.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: https://instragram.com/aayushsoni1010
+image: $assets.files.images.instagram.png
+
+-- end: social.social-button-wrapper
+
+-- social.social-button-wrapper:
+link: https://youtube.com/@ayushsoni1010
+image: $assets.files.images.youtube.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: mailto:ayushsoni1010.work@gmail.com
+image: $assets.files.images.mail.png
+
+-- end: social.social-button-wrapper
+  
+-- end: ftd.row
+
+-- end: ftd.container
 
 -- end: ftd.column
 
--- ds.h1: How to use?
+-- ftd.image: 
+src: $assets.files.images.dog.png
 
-It's very simple like making a sandwich. Create new `.ftd` file and just say:
+;; --------------------------------------------------------------------------------------------
 
--- ds.code: `-- ds.page` 
-lang: ftd
+-- end: ftd.row
 
-\-- ds.page: Your page title goes here
-
-Your page content goes here.
-
-
--- ds.h1: Need sidebar at right side of page?
-
-Here it is, [use this document](https://fifthtry.github.io/doc-site/docs/right-sidebar/).
-
-
--- ds.h1: 👀 Learn FTD and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.dev/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: ds.page
+-- end: ftd.column
