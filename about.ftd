@@ -1,6 +1,5 @@
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/assets
 
-
 ;; --------------------------------------------------------------------------------------------
 
 
@@ -121,11 +120,110 @@ margin-top.px: 3
 ;; --------------------------------------------------------------------------------------------
 
 
--- ftd.column:
-margin.percent: 7.4
-spacing.fixed.px: 7
+;; ********** component for navbar **********
+
+-- component navbar:
+ftd.image-src imageURL:
+
+-- ftd.row: 
+width: fill-container
+align-self: center
+spacing: space-between
+height: hug-content
+
+-- ftd.image:
+link: /
+src: $navbar.imageURL
+width.fixed.px: 50
 
 -- ftd.row:
+margin-top.px: 20
+spacing.fixed.px: 30
+
+-- ftd.text: Home
+role: $inherited.types.label-large
+link: /
+color: teal
+text-align: center
+
+-- ftd.text: About
+role: $inherited.types.label-large
+link: /about
+color: teal
+text-align: center
+
+-- ftd.text: Blogs
+role: $inherited.types.label-large
+link: /blogs
+color: teal
+text-align: center
+
+-- ftd.text: Tweets
+role: $inherited.types.label-large
+link: /tweets
+color: teal
+text-align: center
+
+-- ftd.text: Contact
+role: $inherited.types.label-large
+link: /contact
+color: teal
+text-align: center
+
+-- end: ftd.row
+
+-- ftd.row: 
+margin-top.px: 12
+spacing.fixed.px: 8
+
+-- ftd.text: Resume
+role: $inherited.types.label-large
+link: https://ayushsoni1010.com/resume
+color: teal
+border-color: teal
+border-width.px: 2
+background.solid: white
+border-radius.px: 6
+padding-top.px: 8
+padding-bottom.px: 8
+padding-left.px: 14
+padding-right.px: 14
+
+-- ftd.text: Schedule a Meeting
+role: $inherited.types.label-large
+link: https://calendly.com/ayushsoni1010/
+color: white
+background.solid: teal
+border-color: teal
+border-width.px: 2
+border-radius.px: 6
+padding-top.px: 8
+padding-bottom.px: 8
+padding-left.px: 14
+padding-right.px: 14
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: navbar
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.column:
+width: fill-container
+padding-top.px: 10
+padding-bottom.px: 20
+padding-left.percent: 7.4
+padding-right.percent: 7.4
+spacing.fixed.px: 7
+
+-- navbar:
+imageURL: https://ik.imagekit.io/ayushsoni1010/Logo/logo_QMXL5sBnF.svg?updatedAt=1665559064546
+
+-- ftd.row:
+margin-top.px: 50
 
 -- base-text-wrapper: About
 

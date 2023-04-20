@@ -1,0 +1,16 @@
+-- import: ayushsoni1010.github.io/portfolio-website-fastn/assets
+-- import: ayushsoni1010.github.io/portfolio-website-fastn/header as header
+
+;; --------------------------------------------------------------------------------------------
+
+-- ftd.column:
+width: fill-container
+padding-top.px: 10
+padding-bottom.px: 20
+padding-left.percent: 7.4
+padding-right.percent: 7.4
+
+-- header.navbar:
+imageURL: https://ik.imagekit.io/ayushsoni1010/Logo/logo_QMXL5sBnF.svg?updatedAt=1665559064546
+
+-- end: ftd.column
