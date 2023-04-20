@@ -212,10 +212,11 @@ padding-right.px: 14
 
 
 -- ftd.column:
-margin-top.px: 10
-margin-bottom.percent: 7.4
-margin-left.percent: 7.4
-margin-right.percent: 7.4
+width: fill-container
+padding-top.px: 10
+padding-bottom.px: 20
+padding-left.percent: 7.4
+padding-right.percent: 7.4
 spacing.fixed.px: 7
 
 -- navbar:
