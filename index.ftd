@@ -568,6 +568,48 @@ imageURL: $assets.files.images.ant-design.svg
 
 ;; --------------------------------------------------------------------------------------------
 
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.column:
+margin-top.px: 160
+align-self: center
+align-content: center
+
+-- ftd.text: Product development, the easy way.
+role: $hero-product-service-responsive-typography
+text-align: center
+
+-- ftd.text: I provide you the following perks for your product development process, and more.
+role: $home-description-responsive-typography
+text-align: center
+margin-top.px: 10
+color: #53585e
+width.fixed.px: 900
+
+-- ftd.row: 
+spacing.fixed.px: 50
+margin-top.px: 50
+
+-- hero-product-service-card-wrapper:
+imageURL: $assets.files.images.closer-involvement-icon.svg
+title: Closer involvement
+description: I involve my clients closely in the design and development process in order to deliver a product that best matches your expectations.
+bgColor: #F56565
+
+-- hero-product-service-card-wrapper:
+imageURL: $assets.files.images.ship-faster-icon.svg
+title: Your product ships faster
+description: Unlike larger corporations, I am able to provide a faster product development process from start to finish to help your app launch faster.
+bgColor: #4299E1
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+;; --------------------------------------------------------------------------------------------
+
 -- end: ftd.column
 
 
