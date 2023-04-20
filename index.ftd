@@ -26,10 +26,51 @@ mobile: $hero-ui-text-mobile-type
 ;; --------------------------------------------------------------------------------------------
 
 
-;; ********** responsive styles for hero-ui-text wrapper **********
+;; ********** component for hero-product-service-card wrapper **********
+-- component hero-product-service-card-wrapper:
+ftd.image-src imageURL: 
+string title:
+string description:
+string bgColor:
+
+-- ftd.column:
+width.fixed.px: 350
+align-content: center
+spacing.fixed.px: 10
+
+-- ftd.container:
+background.solid: $hero-product-service-card-wrapper.bgColor
+align-self: center
+border-radius.px: 100
+padding-horizontal.px: 20
+padding-vertical.px: 18
+
+-- ftd.image:
+src: $hero-product-service-card-wrapper.imageURL
+
+-- end: ftd.container
+
+-- ftd.text: $hero-product-service-card-wrapper.title
+role: $home-description-responsive-typography
+style: bold
+margin-top.px: 10
+
+-- ftd.text: $hero-product-service-card-wrapper.description
+role: $home-description-responsive-typography
+color: #53585e
+text-align: center
+
+-- end: ftd.column
+
+-- end: hero-product-service-card-wrapper
+
+;; --------------------------------------------------------------------------------------------
+
+
+;; ********** component for hero-ui-text wrapper **********
 -- component hero-ui-base-text-wrapper:
 string firstTitle:
-string secondTitle:
+optional string secondTitle:
 
 -- ftd.row: 
 spacing.fixed.px: 14
@@ -71,6 +112,27 @@ desktop: $home-description-desktop-type
 mobile: $home-description-mobile-type
 
 ;; --------------------------------------------------------------------------------------------
+
+
+;; ********** responsive styles for hero-product-service **********
+-- ftd.type hero-product-service-desktop-type:
+size.px: 44
+weight: 800
+font-family: Inter
+color: black
+
+-- ftd.type hero-product-service-mobile-type:
+size.px: 34
+weight: 700
+font-family: Inter
+color: black
+
+-- ftd.responsive-type hero-product-service-responsive-typography:
+desktop: $hero-product-service-desktop-type
+mobile: $hero-product-service-mobile-type
+
+;; --------------------------------------------------------------------------------------------
+
 
 -- ftd.column:
 width: fill-container
@@ -227,8 +289,68 @@ image: $assets.files.images.mail.png
 -- ftd.image: 
 src: $assets.files.images.dog.png
 
+-- end: ftd.row
+
+
 ;; --------------------------------------------------------------------------------------------
 
+
+-- ftd.column:
+margin-top.px: 120
+align-self: center
+align-content: center
+
+-- ftd.text: The full product development stack.
+role: $hero-product-service-responsive-typography
+text-align: center
+
+-- ftd.text: From designing the interface to implementing your fully featured application - I can provide the full product design process from an idea to a finished hiqh quality app, polished with fantastic design and running on state of the art software.
+role: $home-description-responsive-typography
+text-align: center
+margin-top.px: 10
+color: #53585e
+width.fixed.px: 900
+
+-- ftd.row: 
+spacing.fixed.px: 50
+margin-top.px: 50
+
+-- hero-product-service-card-wrapper:
+imageURL: $assets.files.images.frontend-development-icon.svg
+title: Frontend Development
+description: I create functional, beautiful and responsive frontend applications for the web with modern technologies.
+bgColor: #0BC5EA
+
+-- hero-product-service-card-wrapper:
+imageURL: $assets.files.images.backend-development-icon.svg
+title: Backend Development
+description: I build high-quality cloud-based backend services for your applications to scale and host all your users.
+bgColor: #ED8936
+
 -- end: ftd.row
+
+-- ftd.row: 
+spacing.fixed.px: 50
+margin-top.px: 50
+
+-- hero-product-service-card-wrapper:
+imageURL: $assets.files.images.ux-design-icon.svg
+title: UX Design
+description: I create applications for real user to match their needs and expectations, satisfy their needs and ease their lives.
+bgColor: #9F7AEA
+
+-- hero-product-service-card-wrapper:
+imageURL: $assets.files.images.ui-design-icon.svg
+title: UI Design
+description: I design beautiful user interfaces for applications to work on all screen sizes. Your colors, typography and more, all pixel perfect and beautiful.
+bgColor: #38B2AC
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+;; --------------------------------------------------------------------------------------------
+
+
 
 -- end: ftd.column
