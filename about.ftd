@@ -178,6 +178,7 @@ spacing.fixed.px: 8
 
 -- ftd.text: Resume
 role: $inherited.types.label-large
+open-in-new-tab: true
 link: https://ayushsoni1010.com/resume
 color: teal
 border-color: teal
@@ -191,6 +192,7 @@ padding-right.px: 14
 
 -- ftd.text: Schedule a Meeting
 role: $inherited.types.label-large
+open-in-new-tab: true
 link: https://calendly.com/ayushsoni1010/
 color: white
 background.solid: teal
