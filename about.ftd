@@ -367,7 +367,8 @@ margin-bottom.px: 20
 -- ftd.text: Ayush Soni | ©2023
 color: black
 link: https://ayushsoni1010.me/portfolio-website-fastn
-role: $about-description-responsive-typography
+role: $inherited.types.label-large
+margin-top.px: 13
 
 -- ftd.row:
 spacing.fixed.px: 10

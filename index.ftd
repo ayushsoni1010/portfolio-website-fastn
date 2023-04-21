@@ -112,7 +112,7 @@ color: teal
 ;; --------------------------------------------------------------------------------------------
 
 
-;; ********** responsive styles for about description **********
+;; ********** responsive styles for home description **********
 -- ftd.type home-description-desktop-type:
 size.px: 16
 font-family: Inter
@@ -621,7 +621,8 @@ margin-top.px: 70
 -- ftd.text: Ayush Soni | ©2023
 color: black
 link: https://ayushsoni1010.me/portfolio-website-fastn
-role: $home-description-responsive-typography
+role: $inherited.types.label-large
+margin-top.px: 13
 
 -- ftd.row:
 spacing.fixed.px: 10
