@@ -158,8 +158,8 @@ mobile: $hero-product-service-mobile-type
 
 -- ftd.column:
 width: fill-container
-margin-top.px: 10
-padding-bottom.percent: 7.4
+padding-top.px: 10
+padding-bottom.px: 20
 padding-left.percent: 7.4
 padding-right.percent: 7.4
 
@@ -609,6 +609,62 @@ bgColor: #4299E1
 -- end: ftd.column
 
 ;; --------------------------------------------------------------------------------------------
+
+;; ********** Footer **********
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-self: center
+margin-top.px: 70
+
+-- ftd.text: Ayush Soni | ©2023
+color: black
+link: https://ayushsoni1010.me/portfolio-website-fastn
+role: $home-description-responsive-typography
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- social.social-button-wrapper:
+link: https://linkedin.com/in/ayushsoni1010
+image: $assets.files.images.linkedin.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: https://twitter.com/ayushsoni1010
+image: $assets.files.images.twitter.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: https://github.com/ayushsoni1010
+image: $assets.files.images.github.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: https://instragram.com/aayushsoni1010
+image: $assets.files.images.instagram.png
+
+-- end: social.social-button-wrapper
+
+-- social.social-button-wrapper:
+link: https://youtube.com/@ayushsoni1010
+image: $assets.files.images.youtube.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: mailto:ayushsoni1010.work@gmail.com
+image: $assets.files.images.mail.png
+
+-- end: social.social-button-wrapper
+  
+-- end: ftd.row
+
+-- end: ftd.row
 
 -- end: ftd.column
 
