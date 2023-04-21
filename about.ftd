@@ -133,7 +133,7 @@ spacing: space-between
 height: hug-content
 
 -- ftd.image:
-link: /
+link: /portfolio-website-fastn
 src: $navbar.imageURL
 width.fixed.px: 50
 
@@ -143,31 +143,31 @@ spacing.fixed.px: 30
 
 -- ftd.text: Home
 role: $inherited.types.label-large
-link: /
+link: /portfolio-website-fastn
 color: teal
 text-align: center
 
 -- ftd.text: About
 role: $inherited.types.label-large
-link: /about
+link: /portfolio-website-fastn/about
 color: teal
 text-align: center
 
 -- ftd.text: Blogs
 role: $inherited.types.label-large
-link: /blogs
+link: /portfolio-website-fastn/blogs
 color: teal
 text-align: center
 
 -- ftd.text: Tweets
 role: $inherited.types.label-large
-link: /tweets
+link: /portfolio-website-fastn/tweets
 color: teal
 text-align: center
 
 -- ftd.text: Contact
 role: $inherited.types.label-large
-link: /contact
+link: /portfolio-website-fastn/contact
 color: teal
 text-align: center
 
