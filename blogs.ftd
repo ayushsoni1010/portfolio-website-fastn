@@ -1,5 +1,8 @@
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/assets
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/header as header
+-- import: ayushsoni1010.github.io/portfolio-website-fastn/about as basetext
+-- import: ayushsoni1010.github.io/portfolio-website-fastn/about as social
+
 
 ;; --------------------------------------------------------------------------------------------
 
@@ -12,5 +15,100 @@ padding-right.percent: 7.4
 
 -- header.navbar:
 imageURL: https://ik.imagekit.io/ayushsoni1010/Logo/logo_QMXL5sBnF.svg?updatedAt=1665559064546
+
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.row:
+margin-top.px: 50
+
+-- basetext.base-text-wrapper:
+heading: Blogs
+description: Content
+
+-- ftd.image:
+src: https://ik.imagekit.io/ayushsoni1010/Website/blogs?ik-sdk-version=javascript-1.4.3&updatedAt=1669666499904
+width.fixed.percent: 12
+margin-top.px: -15
+
+-- end: ftd.row
+
+
+;; --------------------------------------------------------------------------------------------
+
+
+-- ftd.container:
+width: fill-container
+height: fill-container
+padding-vertical.px: 60
+
+-- ftd.row:
+
+-- end: ftd.row
+
+-- end: ftd.container
+
+
+;; --------------------------------------------------------------------------------------------
+
+
+;; ********** Footer **********
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-self: center
+margin-top.px: 70
+
+-- ftd.text: Ayush Soni | ©2023
+color: black
+link: https://ayushsoni1010.me/portfolio-website-fastn
+role: $inherited.types.label-large
+margin-top.px: 13
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- social.social-button-wrapper:
+link: https://linkedin.com/in/ayushsoni1010
+image: $assets.files.images.linkedin.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: https://twitter.com/ayushsoni1010
+image: $assets.files.images.twitter.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: https://github.com/ayushsoni1010
+image: $assets.files.images.github.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: https://instragram.com/aayushsoni1010
+image: $assets.files.images.instagram.png
+
+-- end: social.social-button-wrapper
+
+-- social.social-button-wrapper:
+link: https://youtube.com/@ayushsoni1010
+image: $assets.files.images.youtube.png
+
+-- end: social.social-button-wrapper
+  
+-- social.social-button-wrapper:
+link: mailto:ayushsoni1010.work@gmail.com
+image: $assets.files.images.mail.png
+
+-- end: social.social-button-wrapper
+  
+-- end: ftd.row
+
+-- end: ftd.row
+
 
 -- end: ftd.column
