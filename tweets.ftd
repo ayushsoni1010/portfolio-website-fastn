@@ -91,7 +91,7 @@ image: $assets.files.images.github.png
 -- end: social.social-button-wrapper
   
 -- social.social-button-wrapper:
-link: https://instragram.com/aayushsoni1010
+link: https://instagram.com/aayushsoni1010
 image: $assets.files.images.instagram.png
 
 -- end: social.social-button-wrapper
