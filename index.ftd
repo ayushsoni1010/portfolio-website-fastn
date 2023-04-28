@@ -1,160 +1,13 @@
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/assets
--- import: ayushsoni1010.github.io/portfolio-website-fastn/header as header
--- import: ayushsoni1010.github.io/portfolio-website-fastn/about as social
--- import: ayushsoni1010.github.io/portfolio-website-fastn/about as basetext
+-- import: ayushsoni1010.github.io/portfolio-website-fastn/lib as lib
 -- import: ayushsoni1010.github.io/ui-packages/portfolio/header as navbar
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/base-layout as layout
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/social-buttons as social
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/base-text as text
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/footer as footer
 
-;; --------------------------------------------------------------------------------------------
-
--- ftd.shadow s:
-color: #F0F0F0
-x-offset.px: -15
-y-offset.px: 15
-blur.px: 15
-
-;; --------------------------------------------------------------------------------------------
-
-;; ********** component for skills wrapper **********
-
--- component skills-wrapper:
-ftd.image-src imageURL: 
-
--- ftd.image:
-src: $skills-wrapper.imageURL
-width.fixed.px: 60
-
--- end: skills-wrapper
-
-;; --------------------------------------------------------------------------------------------
-
-
-;; ********** responsive styles for hero-ui-text wrapper **********
--- ftd.type hero-ui-text-desktop-type:
-size.px: 60
-weight: 900
-font-family: Inter
-line-height.px: 55
-
--- ftd.type hero-ui-text-mobile-type:
-size.px: 30
-weight: 800
-font-family: Inter
-line-height.px: 15
-letter-spacing.px: 0
-
--- ftd.responsive-type hero-ui-text-responsive-typography:
-desktop: $hero-ui-text-desktop-type
-mobile: $hero-ui-text-mobile-type
-
-;; --------------------------------------------------------------------------------------------
-
-
-;; ********** component for hero-product-service-card wrapper **********
--- component hero-product-service-card-wrapper:
-ftd.image-src imageURL: 
-string title:
-string description:
-string bgColor:
-
--- ftd.column:
-width.fixed.px: 350
-align-content: center
-spacing.fixed.px: 10
-
--- ftd.container:
-background.solid: $hero-product-service-card-wrapper.bgColor
-align-self: center
-border-radius.px: 100
-padding-horizontal.px: 20
-padding-vertical.px: 18
-
--- ftd.image:
-src: $hero-product-service-card-wrapper.imageURL
-
--- end: ftd.container
-
--- ftd.text: $hero-product-service-card-wrapper.title
-role: $home-description-responsive-typography
-style: bold
-margin-top.px: 10
-
--- ftd.text: $hero-product-service-card-wrapper.description
-role: $home-description-responsive-typography
-color: #53585e
-text-align: center
-
--- end: ftd.column
-
--- end: hero-product-service-card-wrapper
-
-;; --------------------------------------------------------------------------------------------
-
-
-;; ********** component for hero-ui-text wrapper **********
--- component hero-ui-base-text-wrapper:
-string firstTitle:
-optional string secondTitle:
-
--- ftd.row: 
-spacing.fixed.px: 14
-
--- ftd.text: $hero-ui-base-text-wrapper.firstTitle
-role: $hero-ui-text-responsive-typography
-
-
--- ftd.text: $hero-ui-base-text-wrapper.secondTitle
-role: $hero-ui-text-responsive-typography
-color: teal
-
--- end: ftd.row
-
--- end: hero-ui-base-text-wrapper
-
-;; --------------------------------------------------------------------------------------------
-
-
-;; ********** responsive styles for home description **********
--- ftd.type home-description-desktop-type:
-size.px: 16
-font-family: Inter
-color: #1a202c
-line-height.px: 25
-;;letter-spacing.px: 0
-style: regular
-
--- ftd.type home-description-mobile-type:
-size.px: 14
-font-family: Inter
-color: #1a202c
-line-height.px: 30
-;;letter-spacing.px: 0
-style: regular
-
--- ftd.responsive-type home-description-responsive-typography:
-desktop: $home-description-desktop-type
-mobile: $home-description-mobile-type
-
-;; --------------------------------------------------------------------------------------------
-
-
-;; ********** responsive styles for hero-product-service **********
--- ftd.type hero-product-service-desktop-type:
-size.px: 44
-weight: 800
-font-family: Inter
-color: black
-
--- ftd.type hero-product-service-mobile-type:
-size.px: 34
-weight: 700
-font-family: Inter
-color: black
-
--- ftd.responsive-type hero-product-service-responsive-typography:
-desktop: $hero-product-service-desktop-type
-mobile: $hero-product-service-mobile-type
-
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 -- navbar.header:
 logo: $assets.files.images.logo.svg
@@ -176,16 +29,7 @@ cta-item1-link: https://ayushsoni1010.com/resume
 cta-item2: Schedule a Meeting
 cta-item2-link: https://calendly.com/ayushsoni1010
 
--- ftd.column:
-width: fill-container
-padding-top.px: 10
-padding-bottom.px: 20
-padding-left.percent: 7.4
-padding-right.percent: 7.4
-
-
-;; --------------------------------------------------------------------------------------------
-
+-- layout.base-layout:
 
 -- ftd.container:
 link: https://ayushsoni1010.com/github
@@ -198,8 +42,8 @@ padding-horizontal.px: 14
 align-self: center
 margin-top.px: 47
 
-
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
 -- ftd.text: Hello, I'm a Full Stack Developer based in India
@@ -217,28 +61,30 @@ spacing.fixed.px: 14
 -- ftd.column:
 spacing.fixed.px: 20
 
--- hero-ui-base-text-wrapper:
+-- lib.hero-ui-base-text-wrapper:
 firstTitle: I'm
 secondTitle: Ayush Soni,
 
--- hero-ui-base-text-wrapper:
+-- lib.hero-ui-base-text-wrapper:
 firstTitle: full stack
 secondTitle: developer
 
--- hero-ui-base-text-wrapper:
+-- lib.hero-ui-base-text-wrapper:
 firstTitle: and
 secondTitle: designer.
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
 -- ftd.text: I design and create functional and beautiful applications with passion and a focus on user experience and high quality.
-role: $home-description-responsive-typography
+role: $lib.home-description-responsive-typography
 margin-top.px: 10
 width.fixed.px: 700
 
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
 -- ftd.row:
@@ -273,7 +119,8 @@ padding-right.px: 14
 
 -- end: ftd.row
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 ;; ********** Social buttons wrapper **********
 
@@ -331,7 +178,8 @@ src: $assets.files.images.dog.png
 -- end: ftd.row
 
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
 -- ftd.column:
@@ -340,11 +188,11 @@ align-self: center
 align-content: center
 
 -- ftd.text: The full product development stack.
-role: $hero-product-service-responsive-typography
+role: $lib.hero-product-service-responsive-typography
 text-align: center
 
 -- ftd.text: From designing the interface to implementing your fully featured application - I can provide the full product design process from an idea to a finished hiqh quality app, polished with fantastic design and running on state of the art software.
-role: $home-description-responsive-typography
+role: $lib.home-description-responsive-typography
 text-align: center
 margin-top.px: 10
 color: #53585e
@@ -354,13 +202,13 @@ width.fixed.px: 900
 spacing.fixed.px: 50
 margin-top.px: 50
 
--- hero-product-service-card-wrapper:
+-- lib.hero-product-service-card-wrapper:
 imageURL: $assets.files.images.frontend-development-icon.svg
 title: Frontend Development
 description: I create functional, beautiful and responsive frontend applications for the web with modern technologies.
 bgColor: #0BC5EA
 
--- hero-product-service-card-wrapper:
+-- lib.hero-product-service-card-wrapper:
 imageURL: $assets.files.images.backend-development-icon.svg
 title: Backend Development
 description: I build high-quality cloud-based backend services for your applications to scale and host all your users.
@@ -372,13 +220,13 @@ bgColor: #ED8936
 spacing.fixed.px: 50
 margin-top.px: 50
 
--- hero-product-service-card-wrapper:
+-- lib.hero-product-service-card-wrapper:
 imageURL: $assets.files.images.ux-design-icon.svg
 title: UX Design
 description: I create applications for real user to match their needs and expectations, satisfy their needs and ease their lives.
 bgColor: #9F7AEA
 
--- hero-product-service-card-wrapper:
+-- lib.hero-product-service-card-wrapper:
 imageURL: $assets.files.images.ui-design-icon.svg
 title: UI Design
 description: I design beautiful user interfaces for applications to work on all screen sizes. Your colors, typography and more, all pixel perfect and beautiful.
@@ -388,7 +236,8 @@ bgColor: #38B2AC
 
 -- end: ftd.column
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 -- ftd.column:
 margin-top.px: 120
@@ -396,21 +245,18 @@ margin-top.px: 120
 -- ftd.row:
 margin-top.px: 50
 
--- basetext.base-text-wrapper:
+-- text.base-text:
 heading: Skills
 description: Programming
-
--- ftd.image:
-src: https://ik.imagekit.io/ayushsoni1010/Website/skills?updatedAt=1669666366824
-width.fixed.percent: 12
-margin-top.px: -25
+imageURL: https://ik.imagekit.io/ayushsoni1010/Website/skills?updatedAt=1669666366824
+positionTop: -30
 
 -- end: ftd.row
 
 -- ftd.container:
 padding-vertical.px: 30
 padding-horizontal.px: 50
-shadow: $s
+shadow: $lib.shadow
 background.solid: white
 border-radius.px: 20
 
@@ -421,159 +267,164 @@ align-content: center
 -- ftd.row:
 spacing.fixed.px: 75
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.html-5.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.css3.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.java.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.javascript.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.typescript.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.golang.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.react.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.vue-js.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.redux.svg
 
 -- end: ftd.row
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
 -- ftd.row:
 spacing.fixed.px: 75
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.next-js.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.nuxt-js.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.nest-js.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.nodejs.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.express-js.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.firebase.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.sass.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.tailwind-css.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.postcss.svg
 
 -- end: ftd.row
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
 -- ftd.row:
 spacing.fixed.px: 75
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.mysql.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.prisma.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.mongodb.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.heroku.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.vercel.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.netlify.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.amazon-web-services.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.docker.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.google-cloud.svg
 
 -- end: ftd.row
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
 -- ftd.row:
 spacing.fixed.px: 75
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.chartjs.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.postman.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.strapi.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.figma.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.storybook.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.adobe-xd.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.npm.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.yarn.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.git.svg
 
 -- end: ftd.row
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
 -- ftd.row:
 spacing.fixed.px: 75
 align-content: center
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.chakra-ui.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.styled-components.svg
 
--- skills-wrapper:
+-- lib.skills-wrapper:
 imageURL: $assets.files.images.ant-design.svg
 
 -- end: ftd.row
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
 -- end: ftd.column
@@ -583,10 +434,12 @@ imageURL: $assets.files.images.ant-design.svg
 -- end: ftd.column
 
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 
 -- ftd.column:
@@ -595,11 +448,11 @@ align-self: center
 align-content: center
 
 -- ftd.text: Product development, the easy way.
-role: $hero-product-service-responsive-typography
+role: $lib.hero-product-service-responsive-typography
 text-align: center
 
 -- ftd.text: I provide you the following perks for your product development process, and more.
-role: $home-description-responsive-typography
+role: $lib.home-description-responsive-typography
 text-align: center
 margin-top.px: 10
 color: #53585e
@@ -609,13 +462,13 @@ width.fixed.px: 900
 spacing.fixed.px: 50
 margin-top.px: 50
 
--- hero-product-service-card-wrapper:
+-- lib.hero-product-service-card-wrapper:
 imageURL: $assets.files.images.closer-involvement-icon.svg
 title: Closer involvement
 description: I involve my clients closely in the design and development process in order to deliver a product that best matches your expectations.
 bgColor: #F56565
 
--- hero-product-service-card-wrapper:
+-- lib.hero-product-service-card-wrapper:
 imageURL: $assets.files.images.ship-faster-icon.svg
 title: Your product ships faster
 description: Unlike larger corporations, I am able to provide a faster product development process from start to finish to help your app launch faster.
@@ -625,66 +478,46 @@ bgColor: #4299E1
 
 -- end: ftd.column
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 ;; ********** Footer **********
 
--- ftd.row:
-width: fill-container
-spacing: space-between
-align-self: center
-margin-top.px: 70
+-- footer.footer:
+title: Ayush Soni | ©2023
+link: /portfolio-website-fastn
 
--- ftd.text: Ayush Soni | ©2023
-color: black
-link: https://ayushsoni1010.me/portfolio-website-fastn
-role: $inherited.types.label-large
-margin-top.px: 13
-
--- ftd.row:
-spacing.fixed.px: 10
+-- footer.footer.social-buttons:
 
 -- social.social-button-wrapper:
 link: https://linkedin.com/in/ayushsoni1010
 image: $assets.files.images.linkedin.png
 
--- end: social.social-button-wrapper
-  
 -- social.social-button-wrapper:
 link: https://twitter.com/ayushsoni1010
 image: $assets.files.images.twitter.png
 
--- end: social.social-button-wrapper
-  
 -- social.social-button-wrapper:
 link: https://github.com/ayushsoni1010
 image: $assets.files.images.github.png
 
--- end: social.social-button-wrapper
-  
 -- social.social-button-wrapper:
 link: https://instagram.com/aayushsoni1010
 image: $assets.files.images.instagram.png
-
--- end: social.social-button-wrapper
 
 -- social.social-button-wrapper:
 link: https://youtube.com/@ayushsoni1010
 image: $assets.files.images.youtube.png
 
--- end: social.social-button-wrapper
-  
 -- social.social-button-wrapper:
 link: mailto:ayushsoni1010.work@gmail.com
 image: $assets.files.images.mail.png
 
--- end: social.social-button-wrapper
-  
--- end: ftd.row
+-- end: footer.footer.social-buttons
 
--- end: ftd.row
+-- end: footer.footer
 
--- end: ftd.column
+-- end: layout.base-layout
 
 
 

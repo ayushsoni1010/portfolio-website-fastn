@@ -5,7 +5,7 @@
 -- import: ayushsoni1010.github.io/ui-packages/portfolio/base-layout as layout
 -- import: ayushsoni1010.github.io/ui-packages/portfolio/social-buttons as social
 -- import: ayushsoni1010.github.io/ui-packages/portfolio/footer as footer
--- import: ayushsoni1010.github.io/ui-packages/portfolio/cta-roles as cta
+;; -- import: ayushsoni1010.github.io/ui-packages/portfolio/cta-roles as cta
 
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
@@ -114,7 +114,7 @@ image: $assets.files.images.mail.png
 
 ;; ********** Open for roles CTA **********
 
--- cta.cta-roles:
+-- lib.cta-roles:
 title: Open for roles
 description: As a versatile developer, I am excited about the prospect of taking on diverse roles and responsibilities in both frontend and backend development, and I am open to exploring opportunities in various work arrangements, including full-time, part-time, or contract positions.
 imageURL: $assets.files.images.announce.png
