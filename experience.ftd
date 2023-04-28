@@ -34,25 +34,10 @@ cta-item2-link: https://calendly.com/ayushsoni1010
 -- layout.base-layout:
 
 -- text.base-text:
-heading: Tweets
-description: Twitter
-imageURL: https://ik.imagekit.io/ayushsoni1010/Website/notion?ik-sdk-version=javascript-1.4.3&updatedAt=1669666487240
-positionTop: -20
-
-;; --------------------------------------------------------------
-;; --------------------------------------------------------------
-
--- ftd.container:
-width: fill-container
-height: fill-container
-
--- ftd.iframe:
-src: https://my.walls.io/t5wvj?nobackground=1&amp;show_header=0
-loading: lazy
-width.fixed.percent: 100 
-height.fixed.px: 1000
-
--- end: ftd.container
+heading: Experience
+description: Products
+imageURL: https://ik.imagekit.io/ayushsoni1010/Website/projects?ik-sdk-version=javascript-1.4.3&updatedAt=1669666353424
+positionTop: -30
 
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
