@@ -6,6 +6,7 @@
 -- import: ayushsoni1010.github.io/ui-packages/base-text as text
 -- import: ayushsoni1010.github.io/ui-packages/footer as footer
 -- import: ayushsoni1010.github.io/ui-packages/hero-toast as github-toast
+-- import: ayushsoni1010.github.io/ui-packages/button as button
 
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
@@ -35,7 +36,7 @@ cta-item2-link: https://calendly.com/ayushsoni1010
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
 
--- github-toast.toast:
+-- lib.toast:
 title: Hello, I'm a Full Stack Developer based in India
 link: https://ayushsoni1010.com/github
 
@@ -61,49 +62,25 @@ secondTitle: developer
 firstTitle: and
 secondTitle: designer.
 
-;; --------------------------------------------------------------
-;; --------------------------------------------------------------
-
-
 -- ftd.text: I design and create functional and beautiful applications with passion and a focus on user experience and high quality.
 role: $lib.home-description-responsive-typography
 margin-top.px: 10
 width.fixed.px: 700
 
-
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
-
 
 -- ftd.row:
 spacing.fixed.px: 10
 
--- ftd.text: Hire me
-role: $inherited.types.label-large
+-- button.secondary: 
+title: Hire me
 link: mailto:ayushsoni1010.work@gmail.com
-color: teal
-border-color: teal
-border-width.px: 2
-background.solid: white
-border-radius.px: 6
-padding-top.px: 8
-padding-bottom.px: 8
-padding-left.px: 14
-padding-right.px: 14
 
--- ftd.text: Schedule a Meeting
-role: $inherited.types.label-large
-open-in-new-tab: true
+-- button.primary: 
+title: Schedule a Meeting
 link: https://calendly.com/ayushsoni1010/
-color: white
-background.solid: teal
-border-color: teal
-border-width.px: 2
-border-radius.px: 6
-padding-top.px: 8
-padding-bottom.px: 8
-padding-left.px: 14
-padding-right.px: 14
+isNewTab: true
 
 -- end: ftd.row
 
@@ -122,37 +99,25 @@ spacing.fixed.px: 10
 link: https://linkedin.com/in/ayushsoni1010
 image: $assets.files.images.linkedin.png
 
--- end: social.social-button-wrapper
-  
 -- social.social-button-wrapper:
 link: https://twitter.com/ayushsoni1010
 image: $assets.files.images.twitter.png
-
--- end: social.social-button-wrapper
   
 -- social.social-button-wrapper:
 link: https://github.com/ayushsoni1010
 image: $assets.files.images.github.png
-
--- end: social.social-button-wrapper
   
 -- social.social-button-wrapper:
 link: https://instagram.com/aayushsoni1010
 image: $assets.files.images.instagram.png
 
--- end: social.social-button-wrapper
-
 -- social.social-button-wrapper:
 link: https://youtube.com/@ayushsoni1010
 image: $assets.files.images.youtube.png
-
--- end: social.social-button-wrapper
   
 -- social.social-button-wrapper:
 link: mailto:ayushsoni1010.work@gmail.com
 image: $assets.files.images.mail.png
-
--- end: social.social-button-wrapper
   
 -- end: ftd.row
 
@@ -165,10 +130,8 @@ src: $assets.files.images.dog.png
 
 -- end: ftd.row
 
-
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
-
 
 -- ftd.column:
 margin-top.px: 120
@@ -287,7 +250,6 @@ imageURL: $assets.files.images.redux.svg
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
 
-
 -- ftd.row:
 spacing.fixed.px: 75
 
@@ -322,7 +284,6 @@ imageURL: $assets.files.images.postcss.svg
 
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
-
 
 -- ftd.row:
 spacing.fixed.px: 75
@@ -359,7 +320,6 @@ imageURL: $assets.files.images.google-cloud.svg
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
 
-
 -- ftd.row:
 spacing.fixed.px: 75
 
@@ -395,7 +355,6 @@ imageURL: $assets.files.images.git.svg
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
 
-
 -- ftd.row:
 spacing.fixed.px: 75
 align-content: center
@@ -411,24 +370,14 @@ imageURL: $assets.files.images.ant-design.svg
 
 -- end: ftd.row
 
-;; --------------------------------------------------------------
-;; --------------------------------------------------------------
-
-
 -- end: ftd.column
 
 -- end: ftd.container
 
 -- end: ftd.column
 
-
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
-
-
-;; --------------------------------------------------------------
-;; --------------------------------------------------------------
-
 
 -- ftd.column:
 margin-top.px: 160
