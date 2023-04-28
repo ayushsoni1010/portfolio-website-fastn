@@ -1,243 +1,48 @@
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/assets
+-- import: ayushsoni1010.github.io/portfolio-website-fastn/lib as lib
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/header as navbar
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/base-text as basetext
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/base-layout as layout
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/social-buttons as social
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/footer as footer
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/cta-roles as cta
 
-;; --------------------------------------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
+-- layout.base-layout:
 
-;; ********** responsive styles for base-text wrapper **********
--- ftd.type text-wrapper-desktop-type:
-size.px: 60
-font-family: Inter
-line-height.px: 30
+-- navbar.header:
+logo: $assets.files.images.logo.svg
+logoURL: /portfolio-website-fastn
+header-item1: Home
+header-item2: About
+header-item3: Blogs
+header-item4: Tweets
+header-item5: Experience
+header-item6: Contact
+header-item1-link: /portfolio-website-fastn
+header-item2-link: /portfolio-website-fastn/about
+header-item3-link: /portfolio-website-fastn/blogs
+header-item4-link: /portfolio-website-fastn/tweets
+header-item5-link: /portfolio-website-fastn/experience
+header-item6-link: /portfolio-website-fastn/contact
+cta-item1: Resume
+cta-item1-link: https://ayushsoni1010.com/resume
+cta-item2: Schedule a Meeting
+cta-item2-link: https://calendly.com/ayushsoni1010
 
--- ftd.type text-wrapper-mobile-type:
-size.px: 30
-font-family: Inter
-line-height.px: 15
-letter-spacing.px: 0
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
--- ftd.responsive-type base-text-responsive-typography:
-desktop: $text-wrapper-desktop-type
-mobile: $text-wrapper-mobile-type
-
-;; --------------------------------------------------------------------------------------------
-
-
-;; ********** responsive styles for about description **********
--- ftd.type about-description-desktop-type:
-size.px: 16
-font-family: Inter
-color: #1a202c
-line-height.px: 25
-;;letter-spacing.px: 0
-style: regular
-
--- ftd.type about-description-mobile-type:
-size.px: 14
-font-family: Inter
-color: #1a202c
-line-height.px: 30
-;;letter-spacing.px: 0
-style: regular
-
--- ftd.responsive-type about-description-responsive-typography:
-desktop: $about-description-desktop-type
-mobile: $about-description-mobile-type
-
-;; --------------------------------------------------------------------------------------------
-
-
-;; ********** responsive styles for open roles cta **********
--- ftd.type open-roles-cta-desktop-type:
-size.px: 34
-weight: 800
-font-family: Inter
-color: black
-
--- ftd.type open-roles-cta-mobile-type:
-size.px: 28
-weight: 700
-font-family: Inter
-color: black
-
--- ftd.responsive-type open-roles-cta-responsive-typography:
-desktop: $open-roles-cta-desktop-type
-mobile: $open-roles-cta-mobile-type
-
-;; --------------------------------------------------------------------------------------------
-
-
-;; ********** component for base-text wrapper **********
--- component base-text-wrapper:
-string heading:
-string description:
-
--- ftd.column:
-
--- ftd.text: $base-text-wrapper.heading
-role: $base-text-responsive-typography
-color: black
-style: heavy
-
--- ftd.text: $base-text-wrapper.description
-role: $base-text-responsive-typography
-color: teal
-style: heavy
-z-index: -1
-
--- end: ftd.column
-
--- end: base-text-wrapper
-
-;; --------------------------------------------------------------------------------------------
-
-
-;; ********** component for base-text wrapper **********
--- component social-button-wrapper:
-string link:
-ftd.image-src image:
-;;children ui-button:
-
--- ftd.container:
-link: $social-button-wrapper.link
-open-in-new-tab: true
-;;children: $social-button-wrapper.ui-button
-padding-top.px: 8
-padding-bottom.px: 8
-padding-left.px: 12
-padding-right.px: 12
-border-radius.px: 6
-background.solid: #e2e8f0
-
--- ftd.image:
-src: $social-button-wrapper.image
-width.fixed.px: 18
-height.fixed.px: 20
-margin-top.px: 3
-
--- end: ftd.container
-
--- end: social-button-wrapper
-
-;; --------------------------------------------------------------------------------------------
-
-
-;; ********** component for navbar **********
-
--- component navbar:
-ftd.image-src imageURL:
-
--- ftd.row: 
-width: fill-container
-align-self: center
-spacing: space-between
-height: hug-content
-
--- ftd.image:
-link: /portfolio-website-fastn
-src: $navbar.imageURL
-width.fixed.px: 50
-
--- ftd.row:
-margin-top.px: 20
-spacing.fixed.px: 30
-
--- ftd.text: Home
-role: $inherited.types.label-large
-link: /portfolio-website-fastn
-color: teal
-text-align: center
-
--- ftd.text: About
-role: $inherited.types.label-large
-link: /portfolio-website-fastn/about
-color: teal
-text-align: center
-
--- ftd.text: Blogs
-role: $inherited.types.label-large
-link: /portfolio-website-fastn/blogs
-color: teal
-text-align: center
-
--- ftd.text: Tweets
-role: $inherited.types.label-large
-link: /portfolio-website-fastn/tweets
-color: teal
-text-align: center
-
--- ftd.text: Contact
-role: $inherited.types.label-large
-link: /portfolio-website-fastn/contact
-color: teal
-text-align: center
-
--- end: ftd.row
-
--- ftd.row: 
-margin-top.px: 12
-spacing.fixed.px: 8
-
--- ftd.text: Resume
-role: $inherited.types.label-large
-open-in-new-tab: true
-link: https://ayushsoni1010.com/resume
-color: teal
-border-color: teal
-border-width.px: 2
-background.solid: white
-border-radius.px: 6
-padding-top.px: 8
-padding-bottom.px: 8
-padding-left.px: 14
-padding-right.px: 14
-
--- ftd.text: Schedule a Meeting
-role: $inherited.types.label-large
-open-in-new-tab: true
-link: https://calendly.com/ayushsoni1010/
-color: white
-background.solid: teal
-border-color: teal
-border-width.px: 2
-border-radius.px: 6
-padding-top.px: 8
-padding-bottom.px: 8
-padding-left.px: 14
-padding-right.px: 14
-
--- end: ftd.row
-
--- end: ftd.row
-
--- end: navbar
-
-;; --------------------------------------------------------------------------------------------
-
-
--- ftd.column:
-width: fill-container
-padding-top.px: 10
-padding-bottom.px: 20
-padding-left.percent: 7.4
-padding-right.percent: 7.4
-spacing.fixed.px: 7
-
--- navbar:
-imageURL: https://ik.imagekit.io/ayushsoni1010/Logo/logo_QMXL5sBnF.svg?updatedAt=1665559064546
-
--- ftd.row:
-margin-top.px: 50
-
--- base-text-wrapper:
+-- basetext.base-text:
 heading: About
 description: Developer
+imageURL: https://ik.imagekit.io/ayushsoni1010/Website/about?updatedAt=1669666323627
+positionTop: -15
 
--- ftd.image:
-src: https://ik.imagekit.io/ayushsoni1010/Website/about?updatedAt=1669666323627
-width.fixed.percent: 12
-margin-top.px: -15
-
--- end: ftd.row
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 -- ftd.row:
 spacing.fixed.px: 170
@@ -252,165 +57,107 @@ border-radius.px: 10
 spacing.fixed.px: 20
 
 -- ftd.text: 
-role: $about-description-responsive-typography
+role: $lib.about-description-responsive-typography
 
 👨‍🎓This is Ayush Soni , a junior-year computer science undergraduate, pursuing B.Tech from Medi-Caps University, Indore. I am always fascinated by programming and passionate about exploring the latest technology and developing new cool and innovative products. I am an enthusiastic and curious individual who works hard and is highly ambitious in improving my knowledge of real-world applications.
 
 -- ftd.text: 
-role: $about-description-responsive-typography
+role: $lib.about-description-responsive-typography
 
 ⚡I am a Full Stack Developer, an avid Open-Source Enthusiast, and UX/UI Designer, I enjoy building SaaS products and microservices applications while also creating feasible design systems. My deep understanding of frontend and backend application structure and architecture allows me to build robust and scalable products using core principles. By leveraging design principles, I can deliver engaging and intuitive designs that provide seamless user experiences.
 
 -- ftd.text: 
-role: $about-description-responsive-typography
+role: $lib.about-description-responsive-typography
 
 🎯In terms of technical skills, I work with Javascript and Typescript on a daily basis, both professionally and on personal projects. I have actively participated in various hackathons and open-source contribution programs as both a participant and mentor, and I have taken sessions in the community to help with community building, team leadership, and different methodologies in developing software.
 
-;; --------------------------------------------------------------------------------------------
-
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 ;; ********** Social buttons wrapper **********
 
 -- ftd.row:
 spacing.fixed.px: 10
 
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: https://linkedin.com/in/ayushsoni1010
 image: $assets.files.images.linkedin.png
 
--- end: social-button-wrapper
-  
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: https://twitter.com/ayushsoni1010
 image: $assets.files.images.twitter.png
 
--- end: social-button-wrapper
-  
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: https://github.com/ayushsoni1010
 image: $assets.files.images.github.png
 
--- end: social-button-wrapper
-  
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: https://instagram.com/aayushsoni1010
 image: $assets.files.images.instagram.png
 
--- end: social-button-wrapper
-
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: https://youtube.com/@ayushsoni1010
 image: $assets.files.images.youtube.png
 
--- end: social-button-wrapper
-  
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: mailto:ayushsoni1010.work@gmail.com
 image: $assets.files.images.mail.png
 
--- end: social-button-wrapper
-  
 -- end: ftd.row
 
 -- end: ftd.column
 
 -- end: ftd.row
 
-;; --------------------------------------------------------------------------------------------
-
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
 ;; ********** Open for roles CTA **********
 
--- ftd.container:
-border-radius.px: 10
-background.solid: #cbd5e0
-padding.px: 40
-margin-top.px: 20
-margin-bottom.px: 50
-;;background.image: linear-gradient(to right, #cbd5e0, #ecc94b, #fbb6ce)
-
--- ftd.row: 
-spacing.fixed.px: 15
-
--- social-button-wrapper:
-link: https://ayushsoni1010.com/resume
-image: $assets.files.images.announce.png
-
--- end: social-button-wrapper
-
--- ftd.text: Open for roles
-align-self: center
-role: $open-roles-cta-responsive-typography
-
--- end: ftd.row
-
--- ftd.text: 
-role: $about-description-responsive-typography
-margin-top.px: 10
-
-As a versatile developer, I am excited about the prospect of taking on diverse roles and responsibilities in both frontend and backend development, and I am open to exploring opportunities in various work arrangements, including full-time, part-time, or contract positions.
-
--- end: ftd.container
+-- cta.cta-roles:
+title: Open for roles
+description: As a versatile developer, I am excited about the prospect of taking on diverse roles and responsibilities in both frontend and backend development, and I am open to exploring opportunities in various work arrangements, including full-time, part-time, or contract positions.
+imageURL: $assets.files.images.announce.png
 
 ;; --------------------------------------------------------------------------------------------
 
-
 ;; ********** Footer **********
 
--- ftd.row:
-width: fill-container
-spacing: space-between
-align-self: center
-margin-top.px: 70
-margin-bottom.px: 20
+-- footer.footer:
+title: Ayush Soni | ©2023
+link: /portfolio-website-fastn
 
--- ftd.text: Ayush Soni | ©2023
-color: black
-link: https://ayushsoni1010.me/portfolio-website-fastn
-role: $inherited.types.label-large
-margin-top.px: 13
+-- footer.footer.social-buttons:
 
--- ftd.row:
-spacing.fixed.px: 10
-
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: https://linkedin.com/in/ayushsoni1010
 image: $assets.files.images.linkedin.png
 
--- end: social-button-wrapper
-  
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: https://twitter.com/ayushsoni1010
 image: $assets.files.images.twitter.png
 
--- end: social-button-wrapper
-  
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: https://github.com/ayushsoni1010
 image: $assets.files.images.github.png
 
--- end: social-button-wrapper
-  
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: https://instagram.com/aayushsoni1010
 image: $assets.files.images.instagram.png
 
--- end: social-button-wrapper
-
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: https://youtube.com/@ayushsoni1010
 image: $assets.files.images.youtube.png
 
--- end: social-button-wrapper
-  
--- social-button-wrapper:
+-- social.social-button-wrapper:
 link: mailto:ayushsoni1010.work@gmail.com
 image: $assets.files.images.mail.png
 
--- end: social-button-wrapper
-  
--- end: ftd.row
+-- end: footer.footer.social-buttons
 
--- end: ftd.row
+-- end: footer.footer
 
--- end: ftd.column
+-- end: layout.base-layout
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------

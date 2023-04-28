@@ -2,6 +2,7 @@
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/header as header
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/about as social
 -- import: ayushsoni1010.github.io/portfolio-website-fastn/about as basetext
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/header as navbar
 
 ;; --------------------------------------------------------------------------------------------
 
@@ -155,6 +156,25 @@ mobile: $hero-product-service-mobile-type
 
 ;; --------------------------------------------------------------------------------------------
 
+-- navbar.header:
+logo: $assets.files.images.logo.svg
+logoURL: /portfolio-website-fastn
+header-item1: Home
+header-item2: About
+header-item3: Blogs
+header-item4: Tweets
+header-item5: Experience
+header-item6: Contact
+header-item1-link: /portfolio-website-fastn
+header-item2-link: /portfolio-website-fastn/about
+header-item3-link: /portfolio-website-fastn/blogs
+header-item4-link: /portfolio-website-fastn/tweets
+header-item5-link: /portfolio-website-fastn/experience
+header-item6-link: /portfolio-website-fastn/contact
+cta-item1: Resume
+cta-item1-link: https://ayushsoni1010.com/resume
+cta-item2: Schedule a Meeting
+cta-item2-link: https://calendly.com/ayushsoni1010
 
 -- ftd.column:
 width: fill-container
@@ -162,9 +182,6 @@ padding-top.px: 10
 padding-bottom.px: 20
 padding-left.percent: 7.4
 padding-right.percent: 7.4
-
--- header.navbar:
-imageURL: https://ik.imagekit.io/ayushsoni1010/Logo/logo_QMXL5sBnF.svg?updatedAt=1665559064546
 
 
 ;; --------------------------------------------------------------------------------------------
