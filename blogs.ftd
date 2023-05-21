@@ -68,10 +68,6 @@ image: $assets.files.images.instagram.png
 link: https://youtube.com/@ayushsoni1010
 image: $assets.files.images.youtube.png
 
--- social.social-button-wrapper:
-link: mailto:ayushsoni1010.work@gmail.com
-image: $assets.files.images.mail.png
-
 -- end: footer.footer.social-buttons
 
 -- end: footer.footer
