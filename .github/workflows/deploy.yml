@@ -2,7 +2,7 @@ name: Deploy Site
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main , ci/deploy ]
   workflow_dispatch:
   workflow_call:    
 
@@ -16,8 +16,20 @@ jobs:
       - run: sh -c "$(curl -fsSL https://fastn.io/install.sh)"
       - name: Build the pages with fastn
         run: |
-          echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
-          fastn build --base=/
+          if [[ test -f CNAME ]]; then
+            fastn build --base=/
+          else
+            echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
+            fastn build --base=/$CI_REPOSITORY_NAME/
+          fi
+          echo test -f CNAME
+          echo "CNAME does not exist, skipping step"
+          # To deploy the website using GitHub Pages, use the below command
+          
+
+          # To deploy the website using Custom Domain, use the below command and comment out the above command when deploying through GitHub Pages
+          # fastn build --base=/
+
       - name: copy CNAME if found
         run: '(test -f CNAME && cp CNAME .build) || echo "CNAME does not exist, skipping step"'
       - uses: peaceiris/actions-gh-pages@v3
